@@ -27,7 +27,7 @@ function Footer() {
           
           <div className="footer-column links-column">
             <div className="social-links">
-              <a
+              {/* <a
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -62,7 +62,7 @@ function Footer() {
               >
                 <FiTwitter className="social-icon" />
                 <span>Twitter</span>
-              </a>
+              </a> */}
               <Link to="/ayuda" className="social-link help-link">
                 <FiHelpCircle className="social-icon" />
                 <span>Ayuda</span>

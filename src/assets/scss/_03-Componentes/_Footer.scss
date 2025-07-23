@@ -6,7 +6,7 @@ $dolar-gold: #FFD700;
 
 .footer-container {
   background-color: $dolar-dark;
-  padding: 2rem 0;
+  padding: 0rem 0;
   color: white;
   font-family: 'Roboto', sans-serif;
   position: relative;
@@ -24,8 +24,8 @@ $dolar-gold: #FFD700;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  gap: 0rem;
+  margin-bottom: 0rem;
 }
 
 .footer-column {
@@ -75,7 +75,7 @@ $dolar-gold: #FFD700;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
-  padding: 0.5rem;
+  padding: 0;
   border-radius: 4px;
   transition: all 0.3s ease;
   
