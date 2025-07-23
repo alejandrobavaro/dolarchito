@@ -14,7 +14,7 @@ const HeaderUnificado = ({
           <img src="/img/02-logos/logodolarchito.png" alt="Logo Dolarchito" className="logo" />
         </div>
         
-        <nav className="main-nav">
+        {/* <nav className="main-nav">
           <ul>
             {categories.map((category, index) => (
               <li key={index}>
@@ -27,16 +27,16 @@ const HeaderUnificado = ({
               </li>
             ))}
           </ul>
-        </nav>
+        </nav> */}
         
-        <div className="search-container">
+        {/* <div className="search-container">
           <input
             type="text"
             placeholder="Buscar..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-        </div>
+        </div> */}
       </div>
     </header>
   );

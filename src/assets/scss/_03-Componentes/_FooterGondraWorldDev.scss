@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 10px 0;
+  padding: 0px 0;
   font-family: 'Arsenal SC', sans-serif; /* Tipografía del proyecto */
 }
 
@@ -13,12 +13,12 @@
   /* Estilos del enlace principal */
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0px;
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-  padding: 8px 16px;
+  padding: 0px 0px;
   border-radius: 20px;
   background-color: rgba(13, 59, 30, 0.7); /* Fondo semitransparente */
   transition: all 0.3s ease;
@@ -80,13 +80,13 @@
 /* BREAKPOINT PARA TABLET (768px) */
 @media (min-width: 768px) {
   .gondra-footer-dev {
-    padding: 12px 0;
+    padding: 0px 0;
   }
   
   .gondra-dev-link {
     font-size: 15px;
     gap: 10px;
-    padding: 10px 20px;
+    padding: 0px 0px;
   }
   
   .gondra-icon-left,
@@ -98,13 +98,13 @@
 /* BREAKPOINT PARA ESCRITORIO (1024px) */
 @media (min-width: 1024px) {
   .gondra-footer-dev {
-    padding: 15px 0;
+    padding: 0px 0;
   }
   
   .gondra-dev-link {
     font-size: 16px;
     gap: 12px;
-    padding: 12px 24px;
+    padding: 0px 0px;
   }
   
   .gondra-icon-left,

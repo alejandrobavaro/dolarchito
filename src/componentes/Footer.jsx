@@ -19,7 +19,7 @@ function Footer() {
             <Link to="/" className="footer-logo-link">
               <img
                 className="footer-logo"
-                src="/img/02-logos/logoheader1-izquierda.png"
+                src="/img/02-logos/logodolarchito2.png"
                 alt="Dolarchito Logo"
               />
             </Link>
@@ -63,10 +63,10 @@ function Footer() {
                 <FiTwitter className="social-icon" />
                 <span>Twitter</span>
               </a> */}
-              <Link to="/ayuda" className="social-link help-link">
+              {/* <Link to="/ayuda" className="social-link help-link">
                 <FiHelpCircle className="social-icon" />
                 <span>Ayuda</span>
-              </Link>
+              </Link> */}
             </div>
           </div>
           
@@ -74,7 +74,7 @@ function Footer() {
             <Link to="/" className="footer-logo-link">
               <img
                 className="footer-logo"
-                src="/img/02-logos/logoheader2-derecha.png"
+                src="/img/02-logos/logodolarchito2.png"
                 alt="Dolarchito Logo"
               />
             </Link>

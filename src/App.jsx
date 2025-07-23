@@ -56,7 +56,7 @@ function App() {
       <hr className="border border-0 opacity-20" />
       <MainPublicidadSlider />
       <Footer />
-      <MainWhatsappIcon />
+      {/* <MainWhatsappIcon /> */}
     </Router>
   );
 }
