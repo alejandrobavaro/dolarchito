@@ -48,7 +48,8 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<MainContent />} />
-            {/* Mantén tus otras rutas aquí */}
+      
+      
           </Routes>
         </div>
       </div>
