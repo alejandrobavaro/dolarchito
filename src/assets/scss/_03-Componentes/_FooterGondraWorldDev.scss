@@ -1,112 +1,114 @@
-.trademarkGondraFooter {
-  text-align: center;
-  margin: 0;
-  padding: 20px 0;
-
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.textoFooterAutor {
-  border-radius: 8px;
-  width: 100%;
-  padding: 20px;
-
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  color: #495057;
-  margin-bottom: 20px;
-}
-
-.gridPadreProductosGondraFooter1 {
+/* ESTILOS BASE PARA MOVIL (FIRST) */
+.gondra-footer-dev {
+  /* Contenedor flexible centrado */
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
   justify-content: center;
-  padding: 15px;
-  border-radius: 8px;
+  align-items: center;
   width: 100%;
-
+  padding: 10px 0;
+  font-family: 'Arsenal SC', sans-serif; /* Tipografía del proyecto */
 }
 
-.texto-principal {
-  font-size: 16px;
-  color: #4a6fa5;
-  margin-bottom: 10px;
+.gondra-dev-link {
+  /* Estilos del enlace principal */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
   font-weight: 500;
-}
-
-.textoFooterGondraWorld {
-  font-size: 14px;
-  transition: transform 0.2s ease;
-  color: #6c757d;
-
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: rgba(13, 59, 30, 0.7); /* Fondo semitransparente */
+  transition: all 0.3s ease;
+  
+  /* Efecto hover sobre el enlace */
   &:hover {
-    transform: scale(1.05);
-    color: #4a6fa5;
+    background-color: rgba(13, 59, 30, 0.9);
+    transform: translateY(-2px);
+    
+    /* Efecto hover sobre los iconos */
+    .gondra-icon-left {
+      animation: float-left 1.5s ease-in-out infinite;
+    }
+    
+    .gondra-icon-right {
+      animation: float-right 1.5s ease-in-out infinite;
+    }
+    
+    /* Efecto hover sobre el texto */
+    .gondra-dev-text {
+      color: #FFD700; /* Color dorado al hover */
+    }
   }
 }
 
-.texto-secundario {
+/* Estilos para los iconos */
+.gondra-icon-left,
+.gondra-icon-right {
   font-size: 14px;
-  color: #6c757d;
-  margin-left: 10px;
+  color: #FFD700; /* Color dorado */
+  transition: all 0.3s ease;
 }
 
-.imagen-limitada8 {
-  max-width: 120px;
-  height: auto;
-  transition: transform 0.2s ease;
+/* Estilos específicos para el texto */
+.gondra-dev-text {
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
 
-  &:hover {
-    transform: scale(1.05);
+/* ANIMACIONES PARA LOS ICONOS */
+@keyframes float-left {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(10deg);
   }
 }
 
-.objetoCentrado1 {
-  display: block;
-  margin: 0 auto;
+@keyframes float-right {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(-10deg);
+  }
 }
 
-hr {
-  margin: 20px 0;
-  border: none;
-  border-top: 1px solid #e0e0e0;
-}
-
-@media (max-width: 768px) {
-  .texto-principal {
+/* BREAKPOINT PARA TABLET (768px) */
+@media (min-width: 768px) {
+  .gondra-footer-dev {
+    padding: 12px 0;
+  }
+  
+  .gondra-dev-link {
+    font-size: 15px;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+  
+  .gondra-icon-left,
+  .gondra-icon-right {
     font-size: 15px;
   }
-
-  .texto-secundario {
-    font-size: 14px;
-  }
-
-  .imagen-limitada8 {
-    max-width: 100px;
-  }
 }
 
-@media (max-width: 480px) {
-  .texto-principal {
-    font-size: 14px;
+/* BREAKPOINT PARA ESCRITORIO (1024px) */
+@media (min-width: 1024px) {
+  .gondra-footer-dev {
+    padding: 15px 0;
   }
-
-  .texto-secundario {
-    font-size: 13px;
+  
+  .gondra-dev-link {
+    font-size: 16px;
+    gap: 12px;
+    padding: 12px 24px;
   }
-
-  .imagen-limitada8 {
-    max-width: 80px;
-  }
-
-  .gridPadreProductosGondraFooter1 {
-    gap: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-
-  .textoFooterAutor {
-    padding: 15px;
-    margin-top: 0;
+  
+  .gondra-icon-left,
+  .gondra-icon-right {
+    font-size: 16px;
   }
 }

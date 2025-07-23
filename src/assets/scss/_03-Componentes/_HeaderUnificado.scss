@@ -1,106 +1,82 @@
-/*--------------Estilos del Header Principal--------------*/
-.header-unificado {
+.app-header {
   background-color: #ffffff;
-  padding: 0.75rem 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #e9ecef;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  position: relative;
+  z-index: 100;
 }
 
-.contenedor-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1400px;
+.header-container {
+  max-width: 1200px;
   margin: 0 auto;
-  gap: 1rem;
-}
-
-.logo-y-dolar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 1.5rem;
+  padding: 0 1rem;
 }
 
-.logo img.logo-img {
-  height: 40px;
-  width: auto;
-  transition: opacity 0.2s ease;
+.logo-container {
+  .logo {
+    height: 50px;
+    width: auto;
+  }
 }
 
-.logo img.logo-img:hover {
-  opacity: 0.9;
+.main-nav {
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    
+    li {
+      .nav-link {
+        background: none;
+        border: none;
+        color: #333;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 0.5rem 0;
+        position: relative;
+        
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: #85BB65;
+          transition: width 0.3s ease;
+        }
+        
+        &:hover:after {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  justify-content: center;
+.search-container {
+  input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    
+    &:focus {
+      border-color: #85BB65;
+    }
+  }
 }
 
-.nav-links a {
-  color: #495057;
-  text-decoration: none;
-  font-size: 0.9rem;
-  padding: 0.5rem 0.75rem;
-  border-radius: 4px;
-  transition: all 0.2s ease;
-  font-weight: 500;
-}
-
-.nav-links a:hover {
-  color: #0d6efd;
-  background-color: rgba(13, 110, 253, 0.1);
-}
-
-.nav-links a.activo {
-  color: #0d6efd;
-  background-color: rgba(13, 110, 253, 0.05);
-  font-weight: 600;
-}
-
-.acciones-header .btn {
-  padding: 0.5rem 0.75rem;
-  font-size: 0.9rem;
-}
-
-/*--------------Responsive--------------*/
 @media (max-width: 768px) {
-  .contenedor-header {
+  .header-container {
     flex-direction: column;
-    gap: 0.75rem;
-    padding: 0.5rem;
-  }
-
-  .logo-y-dolar {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .nav-links {
-    width: 100%;
-    overflow-x: auto;
-    padding-bottom: 0.5rem;
-    justify-content: flex-start;
-  }
-
-  .nav-links a {
-    font-size: 0.85rem;
-    padding: 0.4rem 0.6rem;
-    white-space: nowrap;
-  }
-}
-
-@media (min-width: 1024px) {
-  .nav-links {
     gap: 1rem;
   }
-
-  .nav-links a {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+  
+  .main-nav ul {
+    gap: 1rem;
   }
 }

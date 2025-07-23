@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import FooterGondraWorldDev from './FooterGondraWorldDev';
 import { FiHelpCircle } from "react-icons/fi";
+import { 
+  FiInstagram, 
+  FiYoutube, 
+  FiFacebook, 
+  FiTwitter 
+} from "react-icons/fi";
 import "../assets/scss/_03-Componentes/_Footer.scss";
 
 function Footer() {
@@ -9,17 +15,17 @@ function Footer() {
     <footer className="footer-container">
       <div className="footer-content">
         <div className="footer-columns">
-          <div className="footer-column">
-            <a href="#" className="footer-logo-link">
+          <div className="footer-column logo-column">
+            <Link to="/" className="footer-logo-link">
               <img
                 className="footer-logo"
                 src="/img/02-logos/logoheader1-izquierda.png"
-                alt="Logo izquierdo"
+                alt="Dolarchito Logo"
               />
-            </a>
+            </Link>
           </div>
           
-          <div className="footer-column">
+          <div className="footer-column links-column">
             <div className="social-links">
               <a
                 href="https://www.instagram.com"
@@ -27,7 +33,8 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="social-link"
               >
-                <i className="bi bi-instagram" /> Instagram
+                <FiInstagram className="social-icon" />
+                <span>Instagram</span>
               </a>
               <a
                 href="https://www.youtube.com"
@@ -35,7 +42,8 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="social-link"
               >
-                <i className="bi bi-youtube" /> YouTube
+                <FiYoutube className="social-icon" />
+                <span>YouTube</span>
               </a>
               <a
                 href="https://www.facebook.com"
@@ -43,7 +51,8 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="social-link"
               >
-                <i className="bi bi-facebook" /> Facebook
+                <FiFacebook className="social-icon" />
+                <span>Facebook</span>
               </a>
               <a
                 href="https://www.twitter.com"
@@ -51,23 +60,24 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="social-link"
               >
-                <i className="bi bi-twitter" /> Twitter
+                <FiTwitter className="social-icon" />
+                <span>Twitter</span>
               </a>
               <Link to="/ayuda" className="social-link help-link">
-                <FiHelpCircle className="me-2" />
-                Ayuda
+                <FiHelpCircle className="social-icon" />
+                <span>Ayuda</span>
               </Link>
             </div>
           </div>
           
-          <div className="footer-column">
-            <a href="#" className="footer-logo-link">
+          <div className="footer-column logo-column">
+            <Link to="/" className="footer-logo-link">
               <img
                 className="footer-logo"
                 src="/img/02-logos/logoheader2-derecha.png"
-                alt="Logo derecho"
+                alt="Dolarchito Logo"
               />
-            </a>
+            </Link>
           </div>
         </div>
         

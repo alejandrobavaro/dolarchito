@@ -1,18 +1,16 @@
 import React from "react";
-import MainContentNovedades from "./MainContentNovedades";
-import HeaderDolarApi from "./HeaderDolarApi";
 import "../assets/scss/_03-Componentes/_MainContent.scss";
 
-function MainContent() {
+const MainContent = () => {
   return (
-    <main className="main-content-container">
-      <div className="content-wrapper">
-        {/* <MainContentNovedades /> */}
-
-        <HeaderDolarApi />
-      </div>
-    </main>
+    <div className="main-content-container">
+      {/* Este contenido aparecerá debajo del componente de cotizaciones */}
+      <section className="additional-content">
+        {/* <h2>Información adicional sobre el dólar</h2>
+        <p>Aquí puedes agregar más contenido, gráficos, o información relevante.</p> */}
+      </section>
+    </div>
   );
-}
+};
 
 export default MainContent;

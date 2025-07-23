@@ -1,5 +1,3 @@
-// src/App.jsx
-
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -14,23 +12,15 @@ import "./assets/scss/_01-General/_App.scss";
 
 //------------HEADER--------------//
 import HeaderUnificado from "./componentes/HeaderUnificado";
+import HeaderDolarApi from "./componentes/HeaderDolarApi";
 
 //-----------HOME - MAIN-----------------//
 import MainContent from "./componentes/MainContent";
 import MainWhatsappIcon from "./componentes/MainWhatsappIcon";
-
 import MainPublicidadSlider from "./componentes/MainPublicidadSlider";
-
 
 //--------------FOOTER----------------//
 import Footer from "./componentes/Footer";
-
-//-----------CONTACTO-----------------//
-import ContactoLogoRedes from "./componentes/ContactoLogoRedes";
-import ContactoFormularioSlider from "./componentes/ContactoFormularioSlider";
-
-//-----------OTROS--------------//
-import ConsultasAyuda from "./componentes/ConsultasAyuda";
 
 function App() {
   const [searchQuery, setSearchQuery] = React.useState('');
@@ -43,11 +33,14 @@ function App() {
   return (
     <Router>
       <HeaderUnificado 
-        categories={['Servicios', 'Impuestos', 'Alquileres']} 
+        categories={['Conversor', 'Otras Monedas', 'Cambio']} 
         onCategoryChange={handleCategoryChange}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
       />
+
+      {/* Mostramos el nuevo componente de cotizaciones */}
+      <HeaderDolarApi />
 
       <hr className="border border-0 opacity-20" />
 
@@ -55,17 +48,7 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<MainContent />} />
-          
-            <Route
-              path="/contacto"
-              element={
-                <>
-                  <ContactoLogoRedes />
-                  <ContactoFormularioSlider />
-                </>
-              }
-            />
-            <Route path="/ayuda" element={<ConsultasAyuda />} />
+            {/* Mantén tus otras rutas aquí */}
           </Routes>
         </div>
       </div>

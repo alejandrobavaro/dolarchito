@@ -15,50 +15,7 @@ const ContactoLogoRedes = () => {
                 src="/img/02-logos/logomisgastos1.png"
               />
             </a>
-            {/* <div className="logo-secondary-container">
-              <a href="#">
-                <img
-                  alt="icono"
-                  className="logo-img logo-secondary"
-                  src="/img/05-img-costados-larga/2.png"
-                />
-              </a>
-
-              <a href="#">
-                <img
-                  alt="icono"
-                  className="logoPuchulita"
-                  src="/img/05-img-costados-larga/0a.png"
-                />
-              </a>
-
-              <a href="#">
-                <img
-                  alt="icono"
-                  className="logo-img logo-secondary"
-                  src="/img/05-img-costados-larga/4.png"
-                />
-              </a>
-            </div> */}
-{/* 
-            <div className="logo-secondary-container">
-              <a href="#">
-                <img
-                  alt="icono"
-                  className="logo-img logo-secondary"
-                  src="/img/05-img-costados-larga/1a.png"
-                />
-              </a>
-
-              <a href="#">
-                <img
-                  alt="icono"
-                  className="logo-img logo-secondary"
-                  src="/img/05-img-costados-larga/3.png"
-                />
-              </a>
-            </div> */}
-
+          
             <div className="logo-secondary-container">
               <a href="#">
                 <img
